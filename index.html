@@ -1,4 +1,54 @@
-﻿<html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <body>
+
+    <h2><a id="applink1" href="weixin:">open weixin</a></h2>
+    <h2><a id="applink2" href="qrweibo:shopid=1923729445">open QRWeibo shopid=1923729445</a></h2>
+    <p><i>Only works on iPhone!</i></p>    
+
+  <script type="text/javascript">
+
+// To avoid the "protocol not supported" alert, fail must open another app.
+var appstorefail2 = "https://itunes.apple.com/cn/app/wei-le-hui/id515224920?mt=8";
+var appstorefail1 = "https://itunes.apple.com/cn/app/wei-xin/id414478124?mt=8";
+
+function applink(fail){
+    return function(){
+        var clickedAt = +new Date;
+        // During tests on 3g/3gs this timeout fires immediately if less than 500ms.
+        setTimeout(function(){
+            // To avoid failing on return to MobileSafari, ensure freshness!
+            if (+new Date - clickedAt < 2000){
+                window.location = fail;
+            }else{
+              
+              
+            }
+            
+        }, 500);    
+    };
+}
+
+document.getElementById("applink1").onclick = applink(appstorefail1);
+              
+document.getElementById("applink2").onclick = applink(appstorefail2);
+//document.getElementById("applink1").onclick = applink(appstorefail);
+//document.getElementById("applink2").onclick = applink(appstorefail);
+
+</script>
+</body>
+</html>
+
+
+<!-- ---
+layout: post
+title: Blogging Like a Hacker
+---
+
+<html>
+>>>>>>> 38a1856582d285a3f6b280b20342d7579c610323
   <head>
     <meta name="viewport" content="width=device-width" />
   </head>
