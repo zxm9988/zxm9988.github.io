@@ -1,25 +1,43 @@
-<!DOCTYPE HTML>
 <html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>安装"Mybaby""1.0""1.0" </title>
+    <meta name="viewport" content="width=device-width" />
   </head>
   <body>
-	<br>
-  <p align=center>
-      <h3>"Mybaby1.01.0"</h3>
-  </p>
 
-	<br>
-	<br>
-  <p align=center><img class="icon" src="http://zxm9988.github.io/Mybaby/Mybaby_logo.png"/></p><h1></h1>
-	<br>
-	<p align=center>
-		<font size="8">
-			<a href="itms-services://?action=download-manifest&url=http://zxm9988.github.io/Mybaby/Mybaby.plist">点击这里安装</a>
-		</font>
-	</p>
-	
-    </div>
-  </body>
+    <h2><a id="applink1" href="weixin:">open 微信</a></h2>
+    <h2><a id="applink2" href="qrweibo:shopid=1923729445">open 微乐汇 shopid=1923729445</a></h2>
+    <p><i>By zxm99888</i></p>    
+
+  <script type="text/javascript">
+
+// To avoid the "protocol not supported" alert, fail must open another app.
+var appstorefail2 = "https://itunes.apple.com/cn/app/wei-le-hui/id515224920?mt=8";
+var appstorefail1 = "https://itunes.apple.com/cn/app/wei-xin/id414478124?mt=8";
+
+function applink(fail){
+    return function(){
+        var clickedAt = +new Date;
+        // During tests on 3g/3gs this timeout fires immediately if less than 500ms.
+        setTimeout(function(){
+            // To avoid failing on return to MobileSafari, ensure freshness!
+            if (+new Date - clickedAt < 2000){
+                window.location = fail;
+            }else{
+              
+              
+            }
+            
+        }, 500);    
+    };
+}
+
+document.getElementById("applink1").onclick = applink(appstorefail1);
+              
+document.getElementById("applink2").onclick = applink(appstorefail2);
+//document.getElementById("applink1").onclick = applink(appstorefail);
+//document.getElementById("applink2").onclick = applink(appstorefail);
+
+</script>
+</body>
 </html>
+
