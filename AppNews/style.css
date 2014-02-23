@@ -1,11 +1,18 @@
 body {
     padding: 10px !important;
+    text-align: left;
 }
 .ng-table {
     border: 0px solid #002;
-    text-align: left; right;
+    text-align: left;
+
+
 /*position:absolute;
 right:0px;
 width:300px;
 background-color:#b0e0e6;*/
+}
+
+.ng-table th {
+  text-align: left;
 }
