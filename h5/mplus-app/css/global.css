@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* reset CSS and base CSS 
+   @author:lvlifang;
+   @time: 2016-10-18
+*/
+html{-webkit-text-size-adjust:100%;font-size:10px;height:100%;}
+body,p,blockquote,ul,ol,li,h1,h2,h3,h4,h5,h6,dl,dd,input,textarea,button{margin:0; padding:0}
+body {height:100%;background: url(../img/bodyBg.png) no-repeat; font-size:1.4rem; color:#000; font-family: Helvetica, "Helvetica Neue", "华文细黑", "STXihei", Arial; line-height:1;-webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-touch-callout:none;-webkit-user-select:none;user-select:none;}
+.h100{height:100%;}
+.w100{width:100%;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;}
+ul, ol {list-style:none}
+em,i,address{font-style: normal; }
+img{border:0;vertical-align:middle;outline: none;}
+a {text-decoration:none; outline:none;}
+input[type=button]{-webkit-appearance:none;-moz-appearance:none;appearance:none;outline:none}
+input,select,textarea{display:inline-block;font-family:Helvetica, "Helvetica Neue", "华文细黑", "STXihei", Arial;font-size:100%;border:0;outline: none; appearance:none; -webkit-appearance:none; background:none;resize:none;}
+.lint_through{ text-decoration: line-through;}
+/*clear float*/
+.clear{clear:both;}
+.clearfix:after {content:''; display:block; clear: both; visibility:hidden}
+/*model style*/
+.tl{text-align:left;}
+.tc{text-align:center;}
+.tr{text-align:right;}
+.fl{float:left;}
+.fr{float:right;}
+.o_hidden{overflow:hidden}
+.v_hidden{visibility:hidden}
+.none{display:none;}
+.in_block{display:inline-block}
+.block{display:block;}
+.relative{position:relative}
+.fixed_top{position:fixed;top:0; left:0; right:0; z-index:999}
+.fixed_btm{position:fixed; bottom:0; left:0; right:0;z-index:999}
+.vm{vertical-align:middle;}
+/*font style*/
+.f9{font-size:.9rem;}
+.f10{font-size:1.0rem;}
+.f12{font-size:1.2rem;}
+.f14{font-size:1.4rem;}
+.f16{font-size:1.6rem;}
+/*margin and padding */
+.mt12{margin-top:1.2rem;}
+.ml_12em, .ml12{margin-left:1.2em;}
+.pl10{padding-left:1rem;}
+.m12{margin:1.2rem;}
+.m08{margin-top: .8rem;}
+/*color style*/
+.black3{color:#000}
+.gray6{color:#666}
+.gray9{color:#999;}
+.white{color:#fff}
+.red{color:#ee1f3c;}
+.green{color:#30af55;}
+.orange1{ color: #fd7536;}
+.red1{color:#e30b20;}
+.ellipsis{display:-webkit-box;display:-moz-box; overflow:hidden; text-overflow: ellipsis; white-space:nowrap;}/*一行打点*/
+/*两行打点*/
+.line_2{display:-webkit-box;display:-moz-box; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+/*三行打点*/
+.line_3{display:-webkit-box;display:-moz-box; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 3; -webkit-box-orient: vertical;}
+/*box style*/
+.whitebg{background:#fff;}
+.bodybg{background:#f6f6f6}
+.box{display:-webkit-box; display:-moz-box; display:box;-webkit-box-sizing: border-box;box-sizing:border-box;-webkit-box-orient:horizontal; -webkit-box-pack:justify;}
+.box1{display:-webkit-flex; display:-moz-flex; display:flex; -webkit-box-sizing: border-box;box-sizing:border-box;}
+/* 默认 flex 是均分父级宽，flex_item 是均分剩余空间 */
+.flex {display:block;-webkit-box-flex:1;-moz-box-flex:1; -webkit-flex:1; flex:1}
+.flex_item {display:block;-webkit-box-flex:1;-moz-box-flex:1; -webkit-flex:1 1 auto; flex:1 1 auto}
+.just_spbe{width:100%;-webkit-box-sizing: border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:-webkit-flex; display:-moz-flex; display:flex;-webkit-justify-content:space-between;justify-content:space-between;-webkit-flex-wrap:wrap;flex-wrap:wrap;}/*平均分布在一行*/
+/*set to black&white*/
+.filter_gray { filter: grayscale(100%); -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%);}
+/*btns style*/
+.red_btn{line-height:3.5rem;background-color:#e30b20;border:none;border-radius:.3rem;color:#fff;font-size:2rem;text-align:center;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box; vertical-align:middle;}
+.red_btn.hover{/*background-color:#e2920d;*/}
+input[type=button][disabled], input[type=button].disabled, input[type=submit][disabled], input[type=submit].disabled{opacity:0.3;}
+[disabled]:hover, .disabled:hover{/*background-color:#ff9933;*/}
+/*input & textarea*/
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder,select option:first-child {color:#999;}
+/*titles*/
+.title{line-height:3.5rem;padding:0 1.2rem 0 1.9rem;font-size:1.3rem;color:#999;background:#f6f6f6;position:relative;}
+.title::after{content:"";display:block;width:.2rem;height:1rem;background:#e30b20;position:absolute;left:1.2rem;top:1.3rem;}
+
+

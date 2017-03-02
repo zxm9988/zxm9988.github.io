@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="renderer" content="webkit"><!-- 启用360浏览器的极速模式(webkit) -->
+<meta name="apple-mobile-web-app-capable" content="yes"/><!-- 是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏 -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/><!-- 设置苹果工具栏颜色 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 避免IE使用兼容模式 -->
+<title>更换场次</title>
+<link rel="stylesheet" href="../css/global.css">
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" type="text/css" href=" ../css/swiper-3.3.0.min.css">
+<script src="../js/ux/fontSize.js"></script>
+</head>
+<body>
+<!--<header class="headbar"></header>-->
+	<!-- <section class="home_page pack">
+		<div class="sit_box">
+			<p class="mov_hall">北京三里屯店1号巨幕厅银幕</p>
+			<div class="seat-box">
+				<div id="seat-map" class="seat-map">
+			</div>
+		</div>
+		<div class="sitType">
+				<div class="choose_seat d_flex">
+		        	<div class="null_seat">可选</div><div class="s_available">已选</div><div class="s_unavailable">已售</div>
+		        	<span class="fr">快速选择</span>
+		    	</div>
+		    	<div class="auto_sit" id="face_box">
+		    		<ul class="d_box">
+		    			<li class="d_flex"><i></i></li>
+		    			<li class="d_flex"><i></i><i></i></li>
+		    			<li class="d_flex"><i></i><i></i><i></i></li>
+		    			<li class="d_flex"><i></i><i></i><i></i><i></i></li>
+		    		</ul>
+		    	</div>
+		    	<div class="auto_sit auto_sit1 clearfix" id="auto_sit1">
+		    		<ul id="selected-seats" class="fl"></ul>
+		    		<span class="total_price fr none" id="total">0元</span>
+		    	</div>
+		</div>
+		<a href="javascript:;" class="select_btn">确认选座</a>
+	</section> -->
+	<div class="markBg"></div>
+	<div class="movie_list">
+		<span class="clo_btn"></span>
+		<div class="movie_plan">
+	    	<div class="film_slice_tab">
+	    		<ul class="d_box">
+	    			<li class="active"><a href="javascript:;">2-16(今天)</a></li>
+	    			<li><a href="javascript:;">2-17(明天)</a></li>
+	    			<li><a href="javascript:;">2-18(后天)</a></li>
+	    			<li><a href="javascript:;">2-19(周日)</a></li>
+	    		</ul>
+	    	</div>
+	    	<div class="film_slice_info">
+	    		<ul>
+	    			<li class="d_box film_slice_list">
+						<a href="javascript:;" class="d_box">
+	    					<div class="d_box d_flex film_slice_box">
+	    						<p class="d_flex">
+									<span class="start-time">10:00</span>
+									<span class="end-time">结束11:30</span>
+								</p>
+								<p class="d_flex">
+									<span class="movie-type">英语3D</span>
+									<span class="end-time">3号厅</span>
+								</p>
+								<p class="d_flex pr">
+									<span class="movie-price"><i>¥</i>60</span>
+									<s class="end-time">¥100</s>
+								</p>
+	    					</div>
+	    					<div>
+	    						<div class="buy_ticket_btn">购票</div>
+	    					</div>
+						</a>
+					</li>
+					<li class="d_box film_slice_list">
+						<a href="javascript:;" class="d_box">
+	    					<div class="d_box d_flex film_slice_box">
+	    						<p class="d_flex">
+									<span class="start-time">10:00</span>
+									<span class="end-time">结束11:30</span>
+								</p>
+								<p class="d_flex">
+									<span class="movie-type">英语3D</span>
+									<span class="end-time">3号厅</span>
+								</p>
+								<p class="d_flex pr">
+									<span class="movie-price"><i>¥</i>60</span>
+									<s class="end-time">¥100</s>
+								</p>
+	    					</div>
+	    					<div>
+	    						<div class="buy_ticket_btn">购票</div>
+	    					</div>
+						</a>
+					</li>
+					<li class="d_box film_slice_list">
+						<a href="javascript:;" class="d_box">
+	    					<div class="d_box d_flex film_slice_box">
+	    						<p class="d_flex">
+									<span class="start-time">10:00</span>
+									<span class="end-time">结束11:30</span>
+								</p>
+								<p class="d_flex">
+									<span class="movie-type">英语3D</span>
+									<span class="end-time">3号厅</span>
+								</p>
+								<p class="d_flex pr">
+									<span class="movie-price"><i>¥</i>60</span>
+									<s class="end-time">¥100</s>
+								</p>
+	    					</div>
+	    					<div>
+	    						<div class="buy_ticket_btn">购票</div>
+	    					</div>
+						</a>
+					</li>
+					<li class="d_box film_slice_list">
+						<a href="javascript:;" class="d_box">
+	    					<div class="d_box d_flex film_slice_box">
+	    						<p class="d_flex">
+									<span class="start-time">10:00</span>
+									<span class="end-time">结束11:30</span>
+								</p>
+								<p class="d_flex">
+									<span class="movie-type">英语3D</span>
+									<span class="end-time">3号厅</span>
+								</p>
+								<p class="d_flex pr">
+									<span class="movie-price"><i>¥</i>60</span>
+									<s class="end-time">¥100</s>
+								</p>
+	    					</div>
+	    					<div>
+	    						<div class="buy_ticket_btn">购票</div>
+	    					</div>
+						</a>
+					</li>
+					<li class="d_box film_slice_list">
+						<a href="javascript:;" class="d_box">
+	    					<div class="d_box d_flex film_slice_box">
+	    						<p class="d_flex">
+									<span class="start-time">10:00</span>
+									<span class="end-time">结束11:30</span>
+								</p>
+								<p class="d_flex">
+									<span class="movie-type">英语3D</span>
+									<span class="end-time">3号厅</span>
+								</p>
+								<p class="d_flex pr">
+									<span class="movie-price"><i>¥</i>60</span>
+									<s class="end-time">¥100</s>
+								</p>
+	    					</div>
+	    					<div>
+	    						<div class="buy_ticket_btn">购票</div>
+	    					</div>
+						</a>
+					</li>
+					<li class="d_box film_slice_list">
+						<a href="javascript:;" class="d_box">
+	    					<div class="d_box d_flex film_slice_box">
+	    						<p class="d_flex">
+									<span class="start-time">10:00</span>
+									<span class="end-time">结束11:30</span>
+								</p>
+								<p class="d_flex">
+									<span class="movie-type">英语3D</span>
+									<span class="end-time">3号厅</span>
+								</p>
+								<p class="d_flex pr">
+									<span class="movie-price"><i>¥</i>60</span>
+									<s class="end-time">¥100</s>
+								</p>
+	    					</div>
+	    					<div>
+	    						<div class="buy_ticket_btn">购票</div>
+	    					</div>
+						</a>
+					</li>
+	    		</ul>
+	    	</div>
+	    </div>
+	</div>
+</body>
+</html>

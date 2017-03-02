@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="renderer" content="webkit"><!-- 启用360浏览器的极速模式(webkit) -->
+<meta name="apple-mobile-web-app-capable" content="yes"/><!-- 是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏 -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/><!-- 设置苹果工具栏颜色 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 避免IE使用兼容模式 -->
+<title>确认订单</title>
+<link rel="stylesheet" href="../css/global.css">
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" type="text/css" href=" ../css/swiper-3.3.0.min.css">
+<script src="../js/ux/fontSize.js"></script>
+</head>
+<body>
+<!--<header class="headbar"></header>-->
+	<section class="home_page pack">
+		<div class="ticket_mes">
+			<p class="t_name t_name1">魔弦传说<span>3D</span></p>
+			<p class="ciname_n">美嘉三里屯店</p>
+			<p class="t_time"><span>2017-01-13</span><span>13:45</span><span>2张</span></p>
+			<p class="t_hall"><span>6厅</span><span>4排5座</span><span>4排6座</span></p>
+		</div>
+		<div class="sale_l">
+			<span>圣代 X2</span>
+			<span>虾片 X1</span>
+		</div>
+		<div class="pay_box">
+			<p>购票手机号<span class="fr">1588888888</span></p>
+			<p>总计<span class="fr">￥102</span></p>
+			<p>会员卡<span class="fr">可用3张</span></p>
+			<p>优惠券<span class="fr">可用3张</span></p>
+		</div>
+	</section>
+	<div class="serDetial">
+		<p class="ser_title">结算明细</p>
+		<p>影票<span class="fr">65元X2</span></p>
+		<p>会员卡折扣<span class="fr">130-200*0.8=62元</span></p>
+		<p>圣代<span class="fr">32元X1</span></p>
+		<p>优惠券折扣<span class="fr">130-200*0.8=62元</span></p>
+	</div>
+	<div class="re_btn re_btn1">
+		<div class="ser_box">影票含服务费4元/张<p class="fr"><span><i></i>应付</span>¥102</p></div>
+		<a href="payOrder.html">确认订单</a>
+	</div>
+	<div class="markBg none"></div>
+	<script src="../js/lib/zepto.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var $ser_box=$('.ser_box'),
+				$serDetial=$('.serDetial'),
+				$markBg=$('.markBg');
+			$ser_box.on('click',function(){
+				$serDetial.css('bottom',8.3+'rem');
+				$('body').css('overflow','hidden');
+				$markBg.removeClass('none');
+			});
+			$markBg.on('click',function(){
+				var _this=$(this);
+				$serDetial.css('bottom',-18+'rem');
+				$('body').css('overflow','auto');
+				 _this.addClass('none');
+			})
+
+		})
+	</script>
+</body>
+</html>

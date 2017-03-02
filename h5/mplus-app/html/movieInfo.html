@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="renderer" content="webkit"><!-- 启用360浏览器的极速模式(webkit) -->
+<meta name="apple-mobile-web-app-capable" content="yes"/><!-- 是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏 -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/><!-- 设置苹果工具栏颜色 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 避免IE使用兼容模式 -->
+<title>影片详情</title>
+<link rel="stylesheet" href="../css/global.css">
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" type="text/css" href=" ../css/swiper-3.3.0.min.css">
+<script src="../js/ux/fontSize.js"></script>
+</head>
+
+<body>
+<!--<header class="headbar"></header>-->
+	<section class="home_page">
+		<div class="pos_box">
+			<img src="../img/movie_pos.jpg" alt="">
+		</div>
+		<span class="play_btn"></span>
+		<div class="mov_info_box">
+			<div class="mov_msg clearfix">
+				<div class="fl mov_msg_n">
+					<h1>大鱼海棠</h1>
+					<span>Bigfish Beconia</span>
+				</div>
+				<div class="fr mov_msg_t">
+					<div>
+						<span>剧情</span>
+						<span>动画</span>
+						<span>传奇</span>
+					</div>
+					<p>123分钟<i>2016-11-30上映</i></p>
+				</div>
+			</div>
+			<div class="mov_intext">
+				<p>所有活着的人类，都是海里一条巨大的鱼；出生的时候他们从海的此岸出发。他们的生命就像横越大海，有时相遇，有时分开……死的时候，他们便到了岸，各去各的世界<i>所有活着的人类，都是海里一条巨大的鱼；出生的时候他们从海的此岸出发。他们的生命就像横越大海，有时相遇，有时分开……死的时候，他们便到了岸，各去各的世界</i></p>
+				<s class="alide_btn"></s>
+			</div>
+			<div class="mov_star">
+				<ul>
+					<li>
+						<dl>
+							<dt>
+								<img src="../img/star1.png" alt="">
+							</dt>
+							<dd>
+								<h1 class="ellipsis">邓肯·琼斯</h1>
+								<span>导演</span>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<img src="../img/star2.png" alt="">
+							</dt>
+							<dd>
+								<h1 class="ellipsis">崔维斯·费米尔</h1>
+								<span>主演</span>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<img src="../img/star3.png" alt="">
+							</dt>
+							<dd>
+								<h1 class="ellipsis">本·福斯特</h1>
+								<span>主演</span>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<img src="../img/star4.png" alt="">
+							</dt>
+							<dd>
+								<h1 class="ellipsis">本·福斯特</h1>
+								<span>主演</span>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<img src="../img/star1.png" alt="">
+							</dt>
+							<dd>
+								<h1 class="ellipsis">邓肯·琼斯</h1>
+								<span>导演</span>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<img src="../img/star2.png" alt="">
+							</dt>
+							<dd>
+								<h1 class="ellipsis">崔维斯·费米尔</h1>
+								<span>主演</span>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<img src="../img/star3.png" alt="">
+							</dt>
+							<dd>
+								<h1 class="ellipsis">本·福斯特</h1>
+								<span>主演</span>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>
+								<img src="../img/star4.png" alt="">
+							</dt>
+							<dd>
+								<h1 class="ellipsis">本·福斯特</h1>
+								<span>主演</span>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<h2 class="mov_tit box">剧照 <a href="javascript" class="more">更多</a></h2>
+			<div class="image_box">
+				<ul id="pics">
+					<li><img src="../img/pho1.jpg" alt=""></li>
+					<li><img src="../img/pho2.jpg" alt=""></li>
+					<li><img src="../img/pho3.jpg" alt=""></li>
+					<li><img src="../img/pho4.jpg" alt=""></li>
+					<li><img src="../img/pho5.jpg" alt=""></li>
+					<li><img src="../img/pho6.jpg" alt=""></li>
+					<li><img src="../img/pho7.jpg" alt=""></li>
+					<li><img src="../img/pho8.jpg" alt=""></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<a href="selectTicket.html" class="select_btn">选择场次</a>
+	<script type="text/javascript" src="../js/lib/zepto.min.js"></script>
+	<script type="text/javascript" src="../js/lib/swiper-3.4.0.jquery.min.js"></script>
+	<script type="text/javascript">
+	function callback(e){
+			return false;
+		}
+
+	</script>
+</body>
+</html>

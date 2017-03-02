@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="renderer" content="webkit"><!-- 启用360浏览器的极速模式(webkit) -->
+<meta name="apple-mobile-web-app-capable" content="yes"/><!-- 是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏 -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/><!-- 设置苹果工具栏颜色 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 避免IE使用兼容模式 -->
+<title>选座购票</title>
+<link rel="stylesheet" href="../css/global.css">
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" type="text/css" href=" ../css/swiper-3.3.0.min.css">
+<script src="../js/ux/fontSize.js"></script>
+</head>
+<body>
+<!--<header class="headbar"></header>-->
+	<section class="home_page pack">
+		<div class="sit_box">
+			<p class="mov_hall">北京三里屯店1号巨幕厅银幕</p>
+			<div class="seat-box">
+				<div id="seat-map" class="seat-map">
+			</div>
+		</div>
+		<div class="sitType">
+				<div class="choose_seat d_flex">
+		        	<div class="null_seat">可选</div><div class="s_available">已选</div><div class="s_unavailable">已售</div>
+		        	<span class="fr">快速选择</span>
+		    	</div>
+		    	<div class="auto_sit" id="face_box">
+		    		<ul class="d_box">
+		    			<li class="d_flex"><i></i></li>
+		    			<li class="d_flex"><i></i><i></i></li>
+		    			<li class="d_flex"><i></i><i></i><i></i></li>
+		    			<li class="d_flex"><i></i><i></i><i></i><i></i></li>
+		    		</ul>
+		    	</div>
+		    	<div class="auto_sit auto_sit1 clearfix" id="auto_sit1">
+		    		<ul id="selected-seats" class="fl"></ul>
+		    		<span class="total_price fr none" id="total">0元</span>
+		    	</div>
+		</div>
+		<a href="goodsList.html" class="select_btn">确认选座</a>
+	</section>
+	<div class="markBg none"></div>
+	<div class="movie_list none">
+		<span class="clo_btn"></span>
+		<div class="movie_plan">
+	    	<div class="film_slice_tab">
+	    		<ul class="d_box">
+	    			<li class="active"><a href="javascript:;">2-16(今天)</a></li>
+	    			<li><a href="javascript:;">2-17(明天)</a></li>
+	    			<li><a href="javascript:;">2-18(后天)</a></li>
+	    			<li><a href="javascript:;">2-19(周日)</a></li>
+	    		</ul>
+	    	</div>
+	    	<div class="film_slice_info">
+	    		<ul>
+	    			<li class="d_box film_slice_list">
+						<a href="javascript:;" class="d_box">
+	    					<div class="d_box d_flex film_slice_box">
+	    						<p class="d_flex">
+									<span class="start-time">10:00</span>
+									<span class="end-time">结束11:30</span>
+								</p>
+								<p class="d_flex">
+									<span class="movie-type">英语3D</span>
+									<span class="end-time">3号厅</span>
+								</p>
+								<p class="d_flex pr">
+									<span class="movie-price"><i>¥</i>60</span>
+									<s class="end-time">¥100</s>
+								</p>
+	    					</div>
+	    					<div>
+	    						<div class="buy_ticket_btn">购票</div>
+	    					</div>
+						</a>
+					</li>
+					<li class="d_box film_slice_list">
+						<a href="javascript:;" class="d_box">
+	    					<div class="d_box d_flex film_slice_box">
+	    						<p class="d_flex">
+									<span class="start-time">10:00</span>
+									<span class="end-time">结束11:30</span>
+								</p>
+								<p class="d_flex">
+									<span class="movie-type">英语3D</span>
+									<span class="end-time">3号厅</span>
+								</p>
+								<p class="d_flex pr">
+									<span class="movie-price"><i>¥</i>60</span>
+									<s class="end-time">¥100</s>
+								</p>
+	    					</div>
+	    					<div>
+	    						<div class="buy_ticket_btn">购票</div>
+	    					</div>
+						</a>
+					</li>
+					<li class="d_box film_slice_list">
+						<a href="javascript:;" class="d_box">
+	    					<div class="d_box d_flex film_slice_box">
+	    						<p class="d_flex">
+									<span class="start-time">10:00</span>
+									<span class="end-time">结束11:30</span>
+								</p>
+								<p class="d_flex">
+									<span class="movie-type">英语3D</span>
+									<span class="end-time">3号厅</span>
+								</p>
+								<p class="d_flex pr">
+									<span class="movie-price"><i>¥</i>60</span>
+									<s class="end-time">¥100</s>
+								</p>
+	    					</div>
+	    					<div>
+	    						<div class="buy_ticket_btn">购票</div>
+	    					</div>
+						</a>
+					</li>
+					<li class="d_box film_slice_list">
+						<a href="javascript:;" class="d_box">
+	    					<div class="d_box d_flex film_slice_box">
+	    						<p class="d_flex">
+									<span class="start-time">10:00</span>
+									<span class="end-time">结束11:30</span>
+								</p>
+								<p class="d_flex">
+									<span class="movie-type">英语3D</span>
+									<span class="end-time">3号厅</span>
+								</p>
+								<p class="d_flex pr">
+									<span class="movie-price"><i>¥</i>60</span>
+									<s class="end-time">¥100</s>
+								</p>
+	    					</div>
+	    					<div>
+	    						<div class="buy_ticket_btn">购票</div>
+	    					</div>
+						</a>
+					</li>
+					<li class="d_box film_slice_list">
+						<a href="javascript:;" class="d_box">
+	    					<div class="d_box d_flex film_slice_box">
+	    						<p class="d_flex">
+									<span class="start-time">10:00</span>
+									<span class="end-time">结束11:30</span>
+								</p>
+								<p class="d_flex">
+									<span class="movie-type">英语3D</span>
+									<span class="end-time">3号厅</span>
+								</p>
+								<p class="d_flex pr">
+									<span class="movie-price"><i>¥</i>60</span>
+									<s class="end-time">¥100</s>
+								</p>
+	    					</div>
+	    					<div>
+	    						<div class="buy_ticket_btn">购票</div>
+	    					</div>
+						</a>
+					</li>
+					<li class="d_box film_slice_list">
+						<a href="javascript:;" class="d_box">
+	    					<div class="d_box d_flex film_slice_box">
+	    						<p class="d_flex">
+									<span class="start-time">10:00</span>
+									<span class="end-time">结束11:30</span>
+								</p>
+								<p class="d_flex">
+									<span class="movie-type">英语3D</span>
+									<span class="end-time">3号厅</span>
+								</p>
+								<p class="d_flex pr">
+									<span class="movie-price"><i>¥</i>60</span>
+									<s class="end-time">¥100</s>
+								</p>
+	    					</div>
+	    					<div>
+	    						<div class="buy_ticket_btn">购票</div>
+	    					</div>
+						</a>
+					</li>
+	    		</ul>
+	    	</div>
+	    </div>
+	</div>
+	<script src="../js/lib/jquery-1.11.3.min.js"></script>
+	<script src="../js/lib/jquery.seat-charts.min.js"></script>
+	<script type="text/javascript">
+	var price = 80,discountp=150; //票价
+$(function(){
+	var $cart = $('#selected-seats'), //座位区
+	$lis = $('#selected-seats li').length,
+		$counter = $('#counter'), //票数
+		$total = $('#total'); //总计金额
+		$dis_price=$('#dis_price'),//总计折扣价
+		$face_box=$('#face_box'),//自动选座的盒子
+		$mask=$('.markBg'),
+		$movie_list=$('.movie_list'),
+		$auto_sit1=$('#auto_sit1');
+	var sc = $('#seat-map').seatCharts({
+		map: [  //座位图
+			'aa__aaaaaaaaaa__aa',
+            'aaaaaaaaaaaaaaaaaa',
+            'aaaaaaaaaaaaaaaaaa',
+            'aaaaaaaaaaaaaaaaaa',
+            'aaaaaaaaaaaaaaaaaa',
+            'aaaaaaaaaaaaaaaaaa',
+            'aa__aaaaaaaaa___aa',
+            'aa__aaaaaaaaaa__aa',
+			'aa__aaaaaaaaaa__aa',
+			'aa__aaaaaaaaaa__aa',
+			'aa__aaaaaaaaaa__aa',
+			'aa__aaaaaaaaaa__aa',
+			'aaaaaaaaaaaaaa____'
+		],
+		naming : {
+			top : false,
+			getLabel : function (character, row, column) {
+				return column;
+			}
+		},
+		legend : { //定义图例
+			node : $('#legend'),
+			items : [
+				[ 'a', 'available',   '可选座' ],
+				[ 'a', 'unavailable', '已售出']
+			]					
+		},
+		click: function () { //点击事件
+			var row = this.settings.row,
+				label = this.settings.label,
+				sel_id = this.settings.id,
+				$face_box=$('#face_box'),//自动选座的盒子
+				num = $('#selected-seats').find('li').length;
+
+			if (this.status() == 'available') { //可选座
+				var flag_01 = getById(row + 1, 1).hasClass('available'),
+					flag_r = getById(row + 1, label + 1).hasClass('available'),
+					flag_l = getById(row + 1, label - 1).hasClass('available'),
+					flag_r1 = getById(row + 1, label + 1).hasClass('available'),
+					flag_r2 = getById(row + 1, label + 2).hasClass('unavailable'),
+					flag_l1 = getById(row + 1, label - 1).hasClass('available'),
+					flag_l2 = getById(row + 1, label - 2).hasClass('unavailable'),
+					end_num = getById(row + 1, label).parent('.seatCharts-row').find('.seatCharts-cell').length - 1,
+					flag_end = getById(row + 1, end_num).hasClass('available'), flag = false,
+					
+				flag1 = (label == 2 && flag_01 && flag_r) ? true : false,
+				flag2 = (label == end_num - 1 && flag_end && flag_l) ? true : false,
+				flag3 = (flag_r1 && flag_r2) ? true : false,
+				flag4 = (flag_l1 && flag_l2) ? true : false;
+				
+				flag = flag1 || flag2 || flag3 || flag4; 
+				if(num == 4) {
+					alert("最多只能选择四张票！");
+					return 'available';
+				} else if(flag) {
+					alert("旁边不能有空位！");
+					return 'available';
+				} else {
+					$('<li>' + (row + 1) + '排' + label + '座</li>')
+						.attr('id', 'cart-item-' + sel_id)
+						.data('seatId', sel_id)
+						.appendTo($cart);
+					
+					$counter.text(sc.find('selected').length + 1);
+					//console.log($counter.text(sc.find('selected').length + 1));
+					$total.removeClass('none').html(recalculateTotal(sc) + price+'元');
+					$dis_price.text(discount(sc) + discountp);
+					$face_box.hide();
+					return 'selected';
+				}	
+			} else if (this.status() == 'selected') { //已选中
+				console.log($cart.children('li').length);
+					if($cart.children('li').length<=1){
+						$face_box.show();
+					}
+				//更新数量
+				$counter.text(sc.find('selected').length - 1);
+				//更新总计
+				$total.removeClass('none').html(recalculateTotal(sc) - price+'元');
+
+				$dis_price.text(discount(sc) - discountp);	
+				//删除已预订座位
+				$('#cart-item-' + sel_id).remove();
+				//可选座
+				
+				return 'available';
+				
+			} else if (this.status() == 'unavailable') { //已售出
+				return 'unavailable';
+			} else {
+				return this.style();
+			}
+		}
+	});
+	$cart.on('click','li',function(){
+		
+		var data=$(this).attr('id').substr(10);
+		$total.removeClass('none').html(recalculateTotal(sc) - price+'元')
+		sc.get(data).status('available');
+		
+		if($(this).parent().children().length<=1){
+			$face_box.show();
+		}
+		//console.log($(this).parent().children().length);
+		$(this).remove();
+	});
+	
+
+
+	var len = $('#seat-map > div:first-child .seatCharts-cell').length;
+
+	$('.seatCharts-row').css({
+		width: (2.2 * len) + 1.6 + 'rem'
+	});
+	
+	//已售出的座位
+	sc.get(['1_2', '4_4','4_5','6_6','6_7','8_5','8_6','8_7','8_8', '10_1', '10_2']).status('unavailable');
+	
+	$('.change').on('click',function(){
+		$mask.removeClass('none');
+		$('body').css({overflow: 'hidden'});
+		$movie_list.removeClass('none');
+	});
+	
+	$mask.on('click',function(event){
+		if(this == event.target){
+			$('body').css({overflow: 'auto'});
+			$(this).addClass('none');
+			$movie_list.addClass('none');
+		}
+	});	
+
+	$('.film_slice_tab ul').on('click','li',function(){
+    		$(this).addClass('active').siblings("li").removeClass('active');
+    	})
+});
+//计算总金额
+function recalculateTotal(sc) {
+	var total = 0;
+	sc.find('selected').each(function () {
+		total += price;
+	});
+			
+	return total;
+}
+function discount(sc){
+	var disprice=0;
+	sc.find('selected').each(function () {
+		disprice += discountp;
+	});
+	return disprice;
+}
+function getById(a, b){
+	return $('#' + a + '_' + b);
+}
+	</script>
+</body>
+</html>
