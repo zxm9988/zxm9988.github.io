@@ -17,13 +17,13 @@
 					<key>kind</key>
 					<string>display-image</string>
 					<key>url</key>
-					<string>https://a.ipa</string>
+					<string>https://wx4.sinaimg.cn/thumb180/added767gy1gcvnjh4hd0j20rs0rsadx.jpg</string>
 				</dict>
 				<dict>
 					<key>kind</key>
 					<string>full-size-image</string>
 					<key>url</key>
-					<string>https://a.ipa</string>
+					<string>https://wx4.sinaimg.cn/thumb180/added767gy1gcvnjh4hd0j20rs0rsadx.jpg</string>
 				</dict>
 			</array>
 			<key>metadata</key>
@@ -43,3 +43,4 @@
 	</array>
 </dict>
 </plist>
+
